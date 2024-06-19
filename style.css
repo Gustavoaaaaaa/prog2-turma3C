@@ -1,11 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@400;700&display=swap');
 
-body {
-    background-color: var(--cor-de-fundo);
-    color: var(--branco);
-    font-family: 'Chakra Petch', sans-serif;
-}
-
 :root {
     --cor-de-fundo: #1E1E1E;
     --verde: #6FFF57;
@@ -14,6 +8,13 @@ body {
     --botao-inativo: rgba(58, 55, 94, 0.5);
     --texto-fundo: rgba(58, 55, 94, 0.3);
 }
+
+body {
+    background-color: var(--cor-de-fundo);
+    color: var(--branco);
+    font-family: 'Chakra Petch', sans-serif;
+}
+
 
 .conteudo-principal {
     display: flex;
@@ -35,8 +36,9 @@ body {
     color: var(--verde);
 }
 
+
 .botao {
-    font-family: "Crakra Petch", sans-serif;
+    font-family: 'Chakra Petch', sans-serif;
     background-color: var(--botao-inativo);
     color: var(--branco);
     display: flex;
@@ -51,31 +53,12 @@ body {
     border-top: none;
 }
 
-.botoes {
-    display: block;
-}
-
 .botao:first-child {
     border-radius: 40px 40px 0 0;
 }
 
-@media screen and (min-width: 768px) {
-    .botoes {
-        display: flex;
-    }
-
-    .botao:first-child {
-        border-radius: 40px 0 0 0;
-    }
-
-    .botao:last-child {
-        border-radius: 0 40px 0 0;
-    }
-}
-
-.ativo{
-    background-color: var(--botao-ativo);
-    border-bottom: 4px solid var(--verde);
+.botoes {
+    display: block;
 }
 
 .botao.ativo{
@@ -88,9 +71,8 @@ body {
     padding: 40px;
     border-radius: 0 0 40px 40px;
 }
-
 .aba-conteudo.ativo{
-    display:block;   
+    display:block;
 }
 
 .aba-conteudo{
@@ -105,4 +87,18 @@ body {
     text-align: center;
     color: var(--verde);
     text-transform: uppercase;
+}
+
+@media screen and (min-width: 768px) {
+    .botoes {
+        display: flex;
+    }
+
+    .botao:first-child {
+        border-radius: 40px 0 0 0;
+    }
+
+    .botao:last-child {
+        border-radius: 0 40px 0 0;
+    }
 }
