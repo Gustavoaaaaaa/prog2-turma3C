@@ -10,7 +10,7 @@
 }
 
 body {
-    background-color: var(--cor-de-fundo);
+    background-image: url(jujutsu-kaisen-shibuya-arc-mahoraga-shibuya-arc.gif);
     color: var(--branco);
     font-family: 'Chakra Petch', sans-serif;
 }
@@ -36,8 +36,13 @@ body {
     color: var(--verde);
 }
 
+.legoraga{
+    width: 10%;
+    justify-content: space-around;
+}
 
 .botao {
+    background-image: url(jujutsu-kaisen-shibuya-arc-mahoraga-shibuya-arc.gif);
     font-family: 'Chakra Petch', sans-serif;
     background-color: var(--botao-inativo);
     color: var(--branco);
@@ -96,8 +101,9 @@ body {
 }
 
 .contador-digito{
-    padding: 0 16px;
-    text-align: center;
+    background-repeat: no-repeat;
+    background-position: 0 100;
+    background-size: 400px 400px;
     min-width: 100px;
 }
 
